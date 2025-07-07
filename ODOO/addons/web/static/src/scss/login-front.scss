@@ -1,0 +1,49 @@
+// Este es la hoja de estilos para el formulario de inicio de sesion
+// Estilos para el recuadro principal del formulario (el "card")
+.o_database_list.card {
+    border: 3px solid #71639E !important; // Borde morado que coincide con tu logo
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); // Sombra más intensa
+    border-radius: 12px; // Esquinas más redondeadas
+    background-color: #FFFFFF; // Fondo blanco para el formulario
+}
+
+// Estilos para el botón "Iniciar sesión"
+.oe_login_buttons .btn-primary {
+    background-color: black !important; // Fondo morado
+    border-color: #71639E !important;
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.15rem; // Un poco más grande
+    padding: 0.8rem 1.5rem; // Más padding
+    border-radius: 8px; // Bordes redondeados
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        background-color: darken(#71639E, 10%) !important;
+        border-color: darken(#71639E, 10%) !important;
+    }
+}
+
+// Estilos para los campos de entrada (Email, Contraseña)
+.oe_login_form .form-control {
+    border: 1px solid #C0C0C0; // Borde gris claro
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    &:focus {
+        border-color: #71639E; // Borde morado al enfocar
+        box-shadow: 0 0 0 0.25rem rgba(113, 99, 158, 0.25);
+    }
+}
+
+// Estilo para el logo (si lo necesitas, aunque parece ya personalizado en tu HTML)
+.text-center.pb-3 img {
+    max-height: 140px; // Ajusta si quieres que el logo sea más grande o pequeño
+    margin-bottom: 20px; // Espacio debajo del logo
+}
+
+// Si quieres cambiar el color de fondo de toda la página (el body)
+body.bg-100 { // La clase 'bg-100' está en el body
+    background-color: #F8F8F8 !important; // Un gris casi blanco para el fondo de la página
+}
+
+@import "./login-front.scss";
