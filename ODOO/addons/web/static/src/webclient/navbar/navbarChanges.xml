@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.NavBar.SectionsMenu" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_menu_sections')]//button/span[@t-esc='section.name']" position="replace">
+            <span t-esc="'Favoritos'"/>
+        </xpath>
+    </t>
+
+</templates>

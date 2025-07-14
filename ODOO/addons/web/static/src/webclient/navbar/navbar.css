@@ -1,0 +1,12 @@
+.o_main_navbar {
+    background-color: #2930A6 !important; /* El color azul que quieres */
+}
+
+/* Puedes añadir más estilos si quieres cambiar el color de texto, iconos, etc. */
+.o_main_navbar .o_nav_item,
+.o_main_navbar .o_menu_toggle,
+.o_main_navbar .o_app_sections_menu,
+.o_main_navbar .o_navbar_apps_menu button,
+.o_main_navbar .o_menu_systray .o_nav_item {
+    color: white !important;
+}

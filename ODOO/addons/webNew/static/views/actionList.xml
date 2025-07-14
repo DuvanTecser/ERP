@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_go_to_customer_invoices_url" model="ir.actions.act_url">
+            <field name="name">Ir a Facturas de Clientes</field>
+            <field name="url">/odoo/customer-invoices</field> <field name="target">self</field> </record>
+
+        <record id="inherit_module_kanban_with_custom_button" model="ir.ui.view">
+            <field name="name">ir.module.module.kanban.inherit.custom.button</field>
+            <field name="model">ir.module.module</field>
+            <field name="inherit_id" ref="base.module_view_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//t[@t-name='card']/main/footer" position="inside">
+                    <button name="%(webNew.action_go_to_customer_invoices_url)s"
+                            type="action"
+                            string="Facturación"
+                            class="btn btn-primary me-1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
