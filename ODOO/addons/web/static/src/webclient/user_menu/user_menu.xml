@@ -6,7 +6,7 @@
             <DropdownGroup group="'web-navbar-group'">
                 <Dropdown>
                     <button class="py-1 py-lg-0">
-                        <img class="o_avatar o_user_avatar rounded" t-att-src="/web/static/img/ERP.png" alt="User"/>
+                        <img class="o_avatar o_user_avatar rounded" t-att-src="source" alt="User"/>
                         <small class="oe_topbar_name d-none ms-2 text-start smaller lh-1 text-truncate"  t-att-class="{'d-lg-inline-block' : env.debug}" style="max-width: 200px">
                             <t t-esc="userName"/>
                             <mark class="d-block font-monospace text-truncate">

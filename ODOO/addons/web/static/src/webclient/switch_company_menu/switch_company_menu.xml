@@ -14,8 +14,10 @@
                 disabled="isSingleCompany"
             >
                 <button data-hotkey="shift+u" t-att-disabled="isSingleCompany" t-att-title="companyService.currentCompany.name">
-                    <i class="fa fa-building d-lg-none"/>
-                    <span class="oe_topbar_name d-none d-lg-block text-truncate" t-esc="companyService.currentCompany.name"/>
+                <!-- Se comenta el icono para el responsive de compañia por si mas adelante se hace uso de el -->
+                    <!-- <i class="fa fa-building d-lg-none"/> -->
+                    <!-- Se comenta la linea de codigo de My Company por si mas adelante se necesita para llamar el nombre de alguna empresa -->
+                    <!-- <span class="oe_topbar_name d-none d-lg-block text-truncate" t-esc="companyService.currentCompany.name"/> -->
                 </button>
 
                 <t t-set-slot="content">

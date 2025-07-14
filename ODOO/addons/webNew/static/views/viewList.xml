@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <t t-inherit="base.module_view_kanban" t-inherit-mode="extension">
+        <xpath expr="//t[@t-name='card']/main/footer" position="inside">
+            <t t-if="record.data.name === 'account'">
+                <button name="%(webNew.action_go_to_customer_invoices_url)s"
+                        type="action"
+                        string="Ver Facturas de Clientes"
+                        class="btn btn-primary me-1"/>
+            </t>
+        </xpath>
+    </t>
+</templates>
