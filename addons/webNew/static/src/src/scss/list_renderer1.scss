@@ -1,0 +1,11 @@
+.o_list_renderer {
+    .o_list_table{
+        border: 3px dashed #2930A6;
+        border-radius: 16px!important;
+        th, i {
+            background-color: #2930A6!important;
+            color: white!important;
+            box-shadow: 0 4px 12px rgba(123, 31, 162, 0.4);
+        }
+    }
+}
